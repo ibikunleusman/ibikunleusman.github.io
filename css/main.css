@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari|Montserrat|Muli|Orbitron|Playfair+Display|Raleway&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Muli', sans-serif !important;
+    background: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255);
+    text-transform: lowercase;
+}
+
+.whitespace {
+    width: 100%;
+    height: 100px;
+}
+
+@media (max-width : 767px) {
+    .whitespace {
+        display: none;
+    }
+}
+
+.line {
+    font-family: 'Orbitron', sans-serif;
+    width: 24em;
+    top: 50%;
+    margin: auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.anim-typewriter {
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 18em;
+    }
+}
+
+@media(max-width: 767px) {
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+        to {
+            width: 17em;
+        }
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: -2px;
+}
+
+@media(max-width: 767px) {
+    .hero-section h1 {
+        font-size: 26px;
+    }
+}
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    display: block;
+    text-align: center;
+    z-index: 0;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 13px;
+    height: 13px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+    -webkit-transform: translate(-50%, 0) rotate(45deg);
+    animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
+@keyframes fade_move_down {
+    0% {
+        transform: translate(0, -20px) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 20px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+h6 {
+    text-align:center;
+}
+
+/*
+.vertical {
+    margin-top: 40px;
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 80px;
+    position: absolute;
+    left: 50%;
+}
+
+.portfolio {
+    height: 500px;
+}
+
+.portfolio1 {
+    background: url('../img/haven.png') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.portfolio1::after {
+    content: "haklist demo";
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    display: block;
+    top: 8%;
+    left: -60%;
+    right: 0;
+    bottom: 0;
+}
+
+.portfolio2 {
+    background: url('../img/gregg.png') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.portfolio2::after {
+    content: "portfolio template demo";
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    display: block;
+    top: 80%;
+    left: 90%;
+    right: 0;
+    bottom: 0;
+}
+
+.portfolio3 {
+    background: url('../img/gregg.png') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.portfolio3::after {
+    content: "e-commerce demo";
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    display: block;
+    top: 80%;
+    left: -50%;
+    right: 0;
+    bottom: 0;
+}
+
+.portfolio4 {
+    background: url('../img/gregg.png') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.portfolio4::after {
+    content: "some demo";
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    display: block;
+    top: 10%;
+    left: 90%;
+    right: 0;
+    bottom: 0;
+}
+
+@media(max-width: 767px) {
+    project {
+        width: 90% !important;
+        margin: 14px auto;
+    }
+
+    .vertical {
+        display: none;
+    }
+
+    .portfolio1::after, .portfolio2::after, .portfolio3::after, .portfolio4::after {
+        display: none;
+    }
+}
+
+@media(max-width: 1020px) {
+    project {
+        width: 90% !important;
+        margin: 14px auto;
+    }
+
+    .vertical {
+        display: none;
+    }
+
+    .portfolio1::after, .portfolio2::after, .portfolio3::after, .portfolio4::after {
+        display: none;
+    }
+}
+*/
+
+.contact {
+    text-align: center;
+    font-weight: normal;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+.hr {
+    background: rgba(255, 255, 255, 0.2);
+    height: 1px;
+}
+
+.contact-info h4 {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.contact-info ul {
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: center;
+}
+
+#linkedin::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: blue;
+}
+
+#email::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: whitesmoke;
+}
+
+#ig::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: lightcoral;
+}
+
+#git::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: rgb(99, 46, 151);
+}
+
+#social-git {
+    text-align: right;
+}
+
+#social-git ul {
+    list-style: none;
+}
+
+#social-git ul li {
+    display: inline-block;
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    .contact, #social-git {
+        text-align: center;
+    }
+
+    .contact-info ul {
+        margin: 0 0 0 -22px;
+        padding: 0;
+    }
+}

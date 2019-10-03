@@ -1,0 +1,217 @@
+/* 	Author: Hakeem Usman;
+	Version: 1.0;
+	Date: 09/03/2019; */
+
+    @import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /*	Sections */
+    .content-big-padding {
+        padding: 120px 0px;
+    }
+    
+    .section-resume, .section-portfolio, footer {
+        color: rgb(255,255,255);
+        font-weight: normal;
+    }
+    
+    .section-education, .section-skills {
+        color: rgb(255,255,255);
+        font-weight: normal;
+    }
+    
+    h2, .header-text p {
+        text-align: center;
+    }
+    
+    h3, h4 {
+        font-size: 20px;
+    }
+    
+    img.section {
+        border-radius: 12px;
+    }
+    
+    .add-space {
+        padding: 20px;
+    }
+    
+    .main-text {
+        font-weight: bold;
+    }
+    
+    .description-text {
+        font-weight: normal;
+    }
+    
+    .location-text {
+        font-weight: normal;
+        color: rgb(34,163,159);
+    }
+    
+    .light {
+        border: 1px solid white;
+    }
+    
+    .dark {
+        border: 1px solid black;
+    }
+    
+    .portfolio-image {
+        width: 100%;
+        height: 400px;
+        cursor: pointer;
+    }
+
+    @media(max-width: 990px) {
+        .portfolio-image {
+            height: 200px;
+        }
+    }
+
+    .pic-one,.pic-two,.pic-three,.pic-four,.pic-five,.pic-six,.pic-seven,.pic-eight,.pic-nine {
+        background-size: cover;
+    }
+    
+    .pic-one {
+        background-image: url(../img/business.jpg);
+    }
+    
+    .pic-two {
+        background-image: url(../img/clouds.jpg);
+    }
+    
+    .pic-three {
+        background-image: url(../img/soccerkit-1.jpg);
+    }
+    
+    .pic-four {
+        background-image: url(../img/haven.png);
+    }
+    .pic-five {
+        background-image: url(../img/music.jpg);
+    }
+    .pic-six {
+        background-image: url(../img/game.jpg);
+    }
+    .pic-seven {
+        background-image: url(../img/stars.jpg);
+    }
+    .pic-eight {
+        background-image: url(../img/walk.jpg);
+    }
+    .pic-nine {
+        background-image: url(../img/code.jpg);
+    }
+
+    .project-modal {
+        background-color: rgb(0,0,0);
+        opacity: 0.75;
+    }
+
+    .fas {
+        cursor: pointer;
+    }
+
+    .skills {
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .skills > p {
+        margin: 0;
+    }
+
+    .skills:before {
+        width: 100%;
+        height: 5px;
+        content: "";
+        display: block;
+        position: absolute;
+        background: rgb(255,255,255);
+        bottom: 0;
+    }
+
+    .skill-bar {
+        width: 100%;
+        height: 5px;
+        background: rgb(71, 207, 115);
+        display: block;
+        position: relative;
+    }
+
+    .skill1 {
+        width: 95%;
+    }
+    .skill2 {
+        width: 92%;
+    }
+    .skill3 {
+        width: 90%;
+    }
+    .skill4 {
+        width: 87%;
+    }
+    .skill5 {
+        width: 85%;
+    }
+    .skill6 {
+        width: 82%;
+    }
+    .skill7 {
+        width: 80%;
+    }
+    .skill8 {
+        width: 75%;
+    }
+    .skill9 {
+        width: 70%;
+    }
+    .skill10 {
+        width: 65%;
+    }
+    .skill11 {
+        width: 60%;
+    }
+    .skill12 {
+        width: 50%;
+    }
+    .skill13 {
+        width: 45%;
+    }
+    .skill14 {
+        width: 40%;
+    }
+    .skill15 {
+        width: 35%;
+    }
+    .skill16 {
+        width: 30%;
+    }
+    .skill17 {
+        width: 27%;
+    }
+    .skill18 {
+        width: 25%;
+    }
+
+    .uppercase {
+        text-transform: uppercase;
+    }
+    
+    .grayscale {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -webkit-transition: all .6s ease;
+        transition: all .6s ease;
+    }
+
+    .grayscale:hover {
+        filter: none;
+        -webkit-filter: grayscale(0%);
+        border: 2px solid white;
+    }

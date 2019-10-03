@@ -1,0 +1,32 @@
+<div class="container-fluid">
+                <br><br><br>
+                <h6>My Works</h6>
+                <div class="vertical">
+
+                </div>
+                <br>
+                <div class="whitespace"></div>
+                <div class="whitespace"></div>
+
+                <div class="row">
+                    <div class="col-lg-8"></div>
+                    <div class="col-lg-4 portfolio portfolio1 wow fadeInUp" onclick="location.href='portfolio.html'"></div>
+                </div>
+                <div class="whitespace"></div>
+                <div class="row">
+                    <div class="col-lg-6 portfolio portfolio2 wow fadeInUp" onclick="location.href='portfolio.html'"></div>
+                    <div class="col-lg-6"></div>
+                </div>
+                <div class="whitespace"></div>
+                <div class="row">
+                    <div class="col-lg-7"></div>
+                    <div class="col-lg-4 portfolio portfolio3 wow fadeInUp" onclick="location.href='portfolio.html'"></div>
+                    <div class="col-lg-1"></div>
+                </div>
+                <div class="whitespace"></div>
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5 portfolio portfolio4 wow fadeInUp" onclick="location.href='portfolio.html'"></div>
+                    <div class="col-lg-6"></div>
+                </div>
+            </div>
